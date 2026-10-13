@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ali Mapari Portfolio</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @keyframes stripFade {
+      0%    { opacity: 0; transform: scaleY(0.85) scaleX(0.9);
+              background: rgba(var(--rgb), 0);
+              box-shadow: 0 0 0 rgba(var(--rgb), 0), inset 0 0 0 rgba(var(--rgb), 0);
+              animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      25%   { opacity: 1; transform: scaleY(1.04) scaleX(1.1);
+              background: rgba(var(--rgb), 0.55);
+              box-shadow: 0 0 25px rgb(var(--rgb)), 0 0 65px rgba(var(--rgb), 0.95), inset 0 0 35px rgba(var(--rgb), 0.8);
+              animation-timing-function: ease-in-out; }
+      50%   { opacity: 0.85; transform: scale(1.02);
+              background: rgba(var(--rgb), 0.45);
+              box-shadow: 0 0 20px rgba(var(--rgb), 0.8), inset 0 0 25px rgba(var(--rgb), 0.6);
+              animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1); }
+      100%  { opacity: 0; transform: scale(0.96);
+              background: rgba(var(--rgb), 0);
+              box-shadow: 0 0 0 rgba(var(--rgb), 0), inset 0 0 0 rgba(var(--rgb), 0); }
+    }
+  </style>
 </head>
-<body>
+
+<body class="bg-[#19001F]">
+
+  <div class="pointer-events-none fixed inset-0 z-50 flex">
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:0ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:110ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:220ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:330ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:440ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:550ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:660ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:770ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:880ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:990ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1100ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1210ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1320ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1430ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1540ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1650ms]"></span>
+  </div>
   <main>
       <!-- Row 1 -->
       <div class="flex h-[20vh] w-full bg-black">
@@ -886,16 +950,605 @@
           ">MY PORTFOLIO</p>
         </nav>
         <nav class="flex gap-[15vh]">
-          <a href="index.html">Home</a>
-          <a href="#Skills">Skills & Project</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html"
+          class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">Home</a>
+          <a href="#Skills"
+          class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">Skills & Project</a>
+          <a href="about.html"
+          class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">About</a>
+          <a href="contact.html"
+          class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">Contact</a>
         </nav>
       </header>
-      <section class="absolute top-[10vh]">
-        <div>AI & DATASCIENCE | WEB DEVELOPMENT</div>
-        
+      <section class="absolute top-[20vh] left-[15vh]">
+        <div class="bg-white/[0.05]
+                  border border-[1px] border-[rgba(236,97,255,0.3)]
+                  backdrop-blur-[1vh]
+                  shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)
+                  rounded-full
+                  inline-block
+                  flex flex-col items-center justify-center gap-[1vh]
+                  h-[10vh] w-[30vw]
+                  shadow-[0_0_3vh_rgba(236,97,255,0.9),inset_0_0_2vh_rgba(236,97,255,0.8)] transition-transform duration-300
+                  text-white">AI & DATASCIENCE | WEB DEVELOPMENT</div>
+                  <p class="text-white
+                  text-[9vh]
+                  pl-[4vh] pt-[3vh]
+                  font-['Cormorant_Upright']"> Hello, I'm
+                  <span class="text-[rgb(236,120,255)]">ALI MAPARI</span><br>
+                  </p>
+                  <p class="text-white
+                  relative left-[4vh]
+                  text-[3.3vh]
+                  ">AI & Data Science student driven by curiosity about how technology works,<br> evolves, and solves real-world problems. My
+                  interests extend beyond writing <br> code to understanding the systems, logic, and creativity that bring digital ideas <br> to
+                  life. <br>
+                  <span class="relative top-[4vh]">I focus on building responsive web experiences and strengthening my <br> software development fundamentals while exploring
+                  the possibilities of <br> artificial intelligence and data-driven technologies. My goal is to combine <br> technical thinking with
+                  creative problem-solving to build digital solutions <br> that are functional, intuitive, and meaningful.</span></p>
       </section>
   </main>
+  <main>
+    <section class="flex justify-center
+    text-white
+    font-['Cormorant_Upright']
+    text-[7vh]
+    w-[98.8vw]
+    p-[8vh]"><p>Education Journay</p></section>
+    <!-- EDUCATION CARDS CONTAINER -->
+
+    <div class="grid grid-cols-1 lg:grid-cols-3
+      gap-[3vh] w-full max-w-7xl mx-auto
+      items-stretch">
+
+
+      <!-- ======================================= -->
+      <!-- CARD 01: CURRENT EDUCATION             -->
+      <!-- ======================================= -->
+
+      <article class="relative group
+        w-full min-h-[520px]
+        bg-white/[0.05]
+        backdrop-blur-[0.5vh]
+        border border-[rgba(236,97,255,0.4)]
+        rounded-[3vh]
+        px-[3vh] py-[4vh]
+
+        shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)]
+
+        flex flex-col items-center justify-center
+        text-center
+
+        transition-all duration-300
+
+        hover:border-[rgba(236,97,255,0.85)]
+        hover:shadow-[0px_0px_3vh_0.5vh_rgba(236,97,255,0.12)]">
+
+
+        <!-- STATUS BADGE -->
+
+        <div class="flex items-center gap-2
+          px-4 py-2 mb-7
+
+          rounded-full
+          border border-[rgba(236,97,255,0.35)]
+          bg-[rgba(236,97,255,0.08)]">
+
+          <span class="w-2 h-2 rounded-full
+            bg-[rgba(236,140,255,1)]
+
+            shadow-[0px_0px_10px_rgba(236,97,255,0.8)]">
+          </span>
+
+          <p class="text-[rgba(236,140,255,1)]
+            text-xs tracking-[0.2em] uppercase">
+
+            Currently Pursuing
+
+          </p>
+
+        </div>
+
+
+        <!-- CARD IDENTIFIER -->
+
+        <p class="text-white/35
+          text-sm tracking-[0.3em] mb-4">
+
+          01 / UNDERGRADUATE
+
+        </p>
+
+
+        <!-- DEGREE TITLE -->
+
+        <h3 class="text-[rgba(236,140,255,1)]
+          text-[clamp(1.5rem,2vw,2rem)]
+          font-semibold leading-tight">
+
+          B.Voc in
+
+          <span class="block mt-2">
+            AI & Data Science
+          </span>
+
+        </h3>
+
+
+        <!-- INSTITUTION DETAILS -->
+
+        <div class="mt-6">
+
+          <p class="text-white
+            text-lg font-medium">
+
+            NIT
+
+          </p>
+
+          <p class="text-white/55
+            text-sm mt-2 leading-relaxed">
+
+            Nexcore Institute of Technology
+
+          </p>
+
+        </div>
+
+
+        <!-- DIVIDER -->
+
+        <div class="w-16 h-px
+          bg-[rgba(236,97,255,0.7)]
+          my-6">
+
+        </div>
+
+
+        <!-- ACADEMIC DURATION -->
+
+        <div>
+
+          <p class="text-[rgba(236,140,255,1)]
+            text-sm font-medium tracking-[0.2em]">
+
+            2026 — 2029
+
+          </p>
+
+          <p class="text-white/50
+            text-sm mt-2">
+
+            First Year
+
+          </p>
+
+        </div>
+
+
+        <!-- TECHNICAL FOCUS -->
+
+        <div class="mt-7 w-full">
+
+          <p class="text-white/55
+            text-xs tracking-[0.25em] uppercase mb-4">
+
+            Areas of Focus
+
+          </p>
+
+
+          <!-- FOCUS TAGS -->
+
+          <div class="flex flex-wrap
+            justify-center gap-2">
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-3 py-2">
+
+              Artificial Intelligence
+
+            </span>
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-3 py-2">
+
+              Data Science
+
+            </span>
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-3 py-2">
+
+              Machine Learning
+
+            </span>
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-3 py-2">
+
+              MERN Stack Development
+
+            </span>
+
+
+          </div>
+
+        </div>
+
+
+      </article>
+
+
+
+      <!-- ======================================= -->
+      <!-- CARD 02: HIGHER SECONDARY EDUCATION     -->
+      <!-- ======================================= -->
+
+      <article class="relative group
+        w-full min-h-[520px]
+        bg-white/[0.05]
+        backdrop-blur-[0.5vh]
+        border border-[rgba(236,97,255,0.3)]
+        rounded-[3vh]
+        px-[3vh] py-[4vh]
+
+        shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)]
+
+        flex flex-col items-center justify-center
+        text-center
+
+        transition-all duration-300
+
+        hover:border-[rgba(236,97,255,0.8)]
+        hover:shadow-[0px_0px_3vh_0.5vh_rgba(236,97,255,0.12)]">
+
+
+        <!-- CARD IDENTIFIER -->
+
+        <p class="text-white/35
+          text-sm tracking-[0.3em] mb-7">
+
+          02 / HIGHER SECONDARY
+
+        </p>
+
+
+        <!-- QUALIFICATION TITLE -->
+
+        <h3 class="text-[rgba(236,140,255,1)]
+          text-[clamp(1.5rem,2vw,2rem)]
+          font-semibold leading-tight">
+
+          Higher Secondary
+
+          <span class="block mt-2">
+            Science (PCM)
+          </span>
+
+        </h3>
+
+
+        <!-- INSTITUTION -->
+
+        <div class="mt-7">
+
+          <p class="text-white
+            text-lg font-medium">
+
+            Navneet Junior College
+
+          </p>
+
+          <p class="text-white/50
+            text-sm mt-2">
+
+            Science Stream
+
+          </p>
+
+        </div>
+
+
+        <!-- DIVIDER -->
+
+        <div class="w-16 h-px
+          bg-[rgba(236,97,255,0.7)]
+          my-7">
+
+        </div>
+
+
+        <!-- ACADEMIC DURATION -->
+
+        <div>
+
+          <p class="text-[rgba(236,140,255,1)]
+            text-sm font-medium tracking-[0.2em]">
+
+            2024 — 2026
+
+          </p>
+
+          <p class="text-white/50
+            text-sm mt-2">
+
+            Higher Secondary Education
+
+          </p>
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="text-white/65
+          text-sm leading-7
+          max-w-xs mt-7">
+
+          Studied Physics, Chemistry, and Mathematics,
+          developing a foundation in scientific reasoning,
+          quantitative thinking, and analytical problem-solving.
+
+        </p>
+
+
+        <!-- SUBJECTS -->
+
+        <div class="mt-7 w-full">
+
+          <p class="text-white/55
+            text-xs tracking-[0.25em] uppercase mb-4">
+
+            Core Subjects
+
+          </p>
+
+
+          <div class="flex flex-wrap
+            justify-center gap-2">
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-4 py-2">
+
+              Physics
+
+            </span>
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-4 py-2">
+
+              Chemistry
+
+            </span>
+
+
+            <span class="text-white/80 text-xs
+              border border-white/10
+              bg-white/[0.04]
+              rounded-full px-4 py-2">
+
+              Mathematics
+
+            </span>
+
+
+          </div>
+
+        </div>
+
+
+      </article>
+
+
+
+      <!-- ======================================= -->
+      <!-- CARD 03: SECONDARY EDUCATION            -->
+      <!-- ======================================= -->
+
+      <article class="relative group
+        w-full min-h-[520px]
+        bg-white/[0.05]
+        backdrop-blur-[0.5vh]
+        border border-[rgba(236,97,255,0.3)]
+        rounded-[3vh]
+        px-[3vh] py-[4vh]
+
+        shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)]
+
+        flex flex-col items-center justify-center
+        text-center
+
+        transition-all duration-300
+
+        hover:border-[rgba(236,97,255,0.8)]
+        hover:shadow-[0px_0px_3vh_0.5vh_rgba(236,97,255,0.12)]">
+
+
+        <!-- CARD IDENTIFIER -->
+
+        <p class="text-white/35
+          text-sm tracking-[0.3em] mb-7">
+
+          03 / SECONDARY
+
+        </p>
+
+
+        <!-- QUALIFICATION TITLE -->
+
+        <h3 class="text-[rgba(236,140,255,1)]
+          text-[clamp(1.5rem,2vw,2rem)]
+          font-semibold leading-tight">
+
+          Secondary
+
+          <span class="block mt-2">
+            Education
+          </span>
+
+        </h3>
+
+
+        <!-- INSTITUTION -->
+
+        <div class="mt-7">
+
+          <p class="text-white
+            text-lg font-medium">
+
+            Safa High School
+
+          </p>
+
+          <p class="text-white/50
+            text-sm mt-2">
+
+            10th Standard
+
+          </p>
+
+        </div>
+
+
+        <!-- DIVIDER -->
+
+        <div class="w-16 h-px
+          bg-[rgba(236,97,255,0.7)]
+          my-7">
+
+        </div>
+
+
+        <!-- COMPLETION YEAR -->
+
+        <p class="text-[rgba(236,140,255,1)]
+          text-sm font-medium tracking-[0.2em]">
+
+          COMPLETED · 2024
+
+        </p>
+
+
+        <!-- ACADEMIC RESULT -->
+
+        <div class="mt-8">
+
+          <p class="text-white/55
+            text-xs tracking-[0.25em] uppercase mb-3">
+
+            Academic Result
+
+          </p>
+
+
+          <h4 class="text-white
+            text-5xl font-semibold tracking-tight">
+
+            72<span class="text-[rgba(236,140,255,1)]">%</span>
+
+          </h4>
+
+
+          <!-- RESULT INDICATOR -->
+
+          <div class="w-36 h-1.5
+            bg-white/10
+            rounded-full
+            overflow-hidden
+            mx-auto mt-5">
+
+            <div class="h-full w-[72%]
+              bg-[rgba(236,97,255,0.85)]
+              rounded-full">
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="text-white/65
+          text-sm leading-7
+          max-w-xs mt-8">
+
+          Completed secondary education, establishing
+          the academic foundation for further studies
+          in science, technology, and computing.
+
+        </p>
+
+
+        <!-- ACADEMIC MILESTONE -->
+
+        <div class="mt-7
+          px-4 py-2
+          rounded-full
+          border border-[rgba(236,97,255,0.25)]
+          bg-[rgba(236,97,255,0.06)]">
+
+          <p class="text-[rgba(236,140,255,1)]
+            text-xs tracking-[0.15em]">
+
+            ACADEMIC FOUNDATION
+
+          </p>
+
+        </div>
+
+
+      </article>
+
+
+    </div>
+  </main>
+
+  <section class="w-[98.8vw]
+  flex justify-center
+  mt-[15vh] mb-[5vh]">
+    <a class="text-[rgba(236,97,255)]
+      bg-white/[0.05]
+      backdrop-blur-[0.5vh]
+      border border-[1px] border-[rgba(236,97,255,0.3)]
+      rounded-[3vh]
+      px-[6vh] py-[1vh]
+      shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)]
+      inline-block hover:scale-105 transition-transform duration-300" href="contact.html">
+      Lets Connect
+    </a>
+  </section>
 </body>
 </html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ali Mapari Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @keyframes stripFade {
+      0%    { opacity: 0; transform: scaleY(0.85) scaleX(0.9);
+              background: rgba(var(--rgb), 0);
+              box-shadow: 0 0 0 rgba(var(--rgb), 0), inset 0 0 0 rgba(var(--rgb), 0);
+              animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      25%   { opacity: 1; transform: scaleY(1.04) scaleX(1.1);
+              background: rgba(var(--rgb), 0.55);
+              box-shadow: 0 0 25px rgb(var(--rgb)), 0 0 65px rgba(var(--rgb), 0.95), inset 0 0 35px rgba(var(--rgb), 0.8);
+              animation-timing-function: ease-in-out; }
+      50%   { opacity: 0.85; transform: scale(1.02);
+              background: rgba(var(--rgb), 0.45);
+              box-shadow: 0 0 20px rgba(var(--rgb), 0.8), inset 0 0 25px rgba(var(--rgb), 0.6);
+              animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1); }
+      100%  { opacity: 0; transform: scale(0.96);
+              background: rgba(var(--rgb), 0);
+              box-shadow: 0 0 0 rgba(var(--rgb), 0), inset 0 0 0 rgba(var(--rgb), 0); }
+    }
+  </style>
+</head>
+
+<body class="bg-[#19001F]">
+
+  <div class="pointer-events-none fixed inset-0 z-50 flex">
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:0ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:110ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:220ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:330ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:440ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:550ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:660ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:770ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:880ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:990ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1100ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1210ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1320ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1430ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:187,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1540ms]"></span>
+    <span
+      class="h-full flex-1 bg-black border-r border-white/[0.1] [--rgb:231,0,255] animate-[stripFade_1.6s_linear_forwards] [animation-delay:1650ms]"></span>
+  </div>
+  <main>
+    <header class="flex relative z-40 justify-between items-center
+            text-white text-[2.7vh]
+            absolute top-[4vh] left-[15vh]
+            w-[88vw]
+            bg-white/[0.05]
+            backdrop-blur-[0.5vh]
+            border border-[1px] border-[rgba(236,97,255,0.3)]
+            rounded-[3vh]
+            px-[6vh] py-[1vh]
+            shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)">
+      <nav class="">
+        <p class="text-[3.2vh]
+                text-[rgb(255,255,255)]
+                  [text-shadow:0_0_1.5vh_rgba(236,97,255)]
+                ">MY PORTFOLIO</p>
+      </nav>
+      <nav class="flex gap-[15vh]">
+        <a href="index.html" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+                active:scale[1.2] active:text-[rgba(236,97,255)]
+                [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+                transition-transform duration-300 ease-in-out">Home</a>
+        <a href="#Skills" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+                active:scale[1.2] active:text-[rgba(236,97,255)]
+                [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+                transition-transform duration-300 ease-in-out">Skills & Project</a>
+        <a href="about.html" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+                active:scale[1.2] active:text-[rgba(236,97,255)]
+                [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+                transition-transform duration-300 ease-in-out">About</a>
+        <a href="contact.html" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+                active:scale[1.2] active:text-[rgba(236,97,255)]
+                [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+                transition-transform duration-300 ease-in-out">Contact</a>
+      </nav>
+    </header>
+    <!-- CONTACT SECTION -->
+
+    <main class="relative z-10 px-[6vw] pt-[16vh] pb-[6vh]">
+
+      <!-- HEADING -->
+
+      <section class="mb-[7vh]">
+
+        <p class="text-[#ec61ff] text-[2.7vh] tracking-[0.5vh] uppercase mb-[2vh]">
+          Contact / Connect With Me
+        </p>
+
+        <h1 class="font-['Cormorant_Upright'] text-white text-[7vh] leading-tight">
+          Let's Connect.
+          <span class="block text-[#ec61ff]">
+            Beyond the Code.
+          </span>
+        </h1>
+
+        <p class="text-white/65 text-[2.7vh] leading-relaxed mt-[3vh] max-w-[100vh]">
+          Hello, I'm Ali Mapari, an AI and Data Science student interested
+          in technology, problem-solving, and web development.
+
+          Connect with me to discuss projects, exchange ideas, share feedback,
+          or explore opportunities to collaborate. I'm based in Mumbai, India.
+        </p>
+
+      </section>
+
+
+      <!-- CONTACT METHODS -->
+
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3vh]">
+
+
+        <!-- LINKEDIN -->
+
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" target="_blank" rel="noopener noreferrer"
+          aria-label="Connect with me on LinkedIn" class="bg-white/[0.04]
+            border border-[rgba(236,97,255,0.3)]
+            backdrop-blur-[1vh]
+            rounded-[3vh]
+            p-[4vh]
+            flex flex-col gap-[2vh]">
+
+          <div class="flex justify-between items-center">
+
+            <div class="h-[8vh] w-[8vh]
+              flex items-center justify-center
+              rounded-[2vh]
+              bg-[#0A66C2]/15
+              border border-[#0A66C2]/40">
+
+              <img src="assets/linkdin.png" alt="LinkedIn" class="h-full w-full object-cover rounded-[2vh]" />
+
+            </div>
+
+            <span class="text-[#ec61ff] text-[2.5vh]">↗</span>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-white font-['Cormorant_Upright'] text-[3.5vh]">
+              LinkedIn
+            </h2>
+
+            <p class="text-white/55 text-[2.8vh] mt-[1vh]">
+              Professional Network
+            </p>
+
+            <p class="text-white/70 text-[2.7vh] mt-[2vh] leading-relaxed">
+              Connect with me professionally, exchange knowledge, and
+              explore opportunities for collaboration.
+            </p>
+
+          </div>
+
+          <p class="text-[#ec61ff] text-[2.7vh] mt-[1vh]">
+            Connect on LinkedIn →
+          </p>
+
+        </a>
+
+
+
+        <!-- INSTAGRAM -->
+
+        <a href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME/" target="_blank" rel="noopener noreferrer"
+          aria-label="Follow me on Instagram" class="bg-white/[0.04]
+            border border-[rgba(236,97,255,0.3)]
+            backdrop-blur-[1vh]
+            rounded-[3vh]
+            p-[4vh]
+            flex flex-col gap-[2vh]">
+
+          <div class="flex justify-between items-center">
+
+            <div class="h-[8vh] w-[8vh]
+              flex items-center justify-center
+              rounded-[2vh]
+              bg-[#E4405F]/10
+              border border-[#E4405F]/40">
+
+              <img src="assets/insta.jpg" alt="Instagram" class="h-full w-full object-cover rounded-[2vh]" />
+
+            </div>
+
+            <span class="text-[#ec61ff] text-[2.5vh]">↗</span>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-white font-['Cormorant_Upright'] text-[3.5vh]">
+              Instagram
+            </h2>
+
+            <p class="text-white/55 text-[2.8vh] mt-[1vh]">
+              Personal & Creative Space
+            </p>
+
+            <p class="text-white/70 text-[2.7vh] mt-[2vh] leading-relaxed">
+              Follow my profile and connect with me beyond my technical
+              projects and portfolio.
+            </p>
+
+          </div>
+
+          <p class="text-[#ec61ff] text-[2.7vh] mt-[1vh]">
+            Visit Instagram →
+          </p>
+
+        </a>
+
+
+
+        <!-- WHATSAPP -->
+
+        <a href="https://wa.me/917506565137" target="_blank" rel="noopener noreferrer"
+          aria-label="Contact me on WhatsApp" class="bg-white/[0.04]
+            border border-[rgba(236,97,255,0.3)]
+            backdrop-blur-[1vh]
+            rounded-[3vh]
+            p-[4vh]
+            flex flex-col gap-[2vh]">
+
+          <div class="flex justify-between items-center">
+
+            <div class="h-[8vh] w-[8vh]
+              flex items-center justify-center
+              rounded-[2vh]
+              bg-[#25D366]/10
+              border border-[#25D366]/40">
+
+              <img src="assets/whatsapp.jpg" alt="WhatsApp" class="h-full w-full object-cover rounded-[2vh]" />
+
+            </div>
+
+            <span class="text-[#ec61ff] text-[2.5vh]">↗</span>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-white font-['Cormorant_Upright'] text-[3.5vh]">
+              WhatsApp
+            </h2>
+
+            <p class="text-white/55 text-[2.8vh] mt-[1vh]">
+              Direct Communication
+            </p>
+
+            <p class="text-white/70 text-[2.7vh] mt-[2vh] leading-relaxed">
+              Reach out for a direct conversation about a project, an idea,
+              or a technical question.
+            </p>
+
+          </div>
+
+          <p class="text-[#ec61ff] text-[2.7vh] mt-[1vh]">
+            Message on WhatsApp →
+          </p>
+
+        </a>
+
+
+
+        <!-- EMAIL -->
+
+        <a href="mailto:YOUR-EMAIL@example.com" aria-label="Send me an email" class="bg-white/[0.04]
+            border border-[rgba(236,97,255,0.3)]
+            backdrop-blur-[1vh]
+            rounded-[3vh]
+            p-[4vh]
+            flex flex-col gap-[2vh]">
+
+          <div class="flex justify-between items-center">
+
+            <div class="h-[8vh] w-[8vh]
+              flex items-center justify-center
+              rounded-[2vh]
+              bg-[#ec61ff]/10
+              border border-[rgba(236,97,255,0.4)]">
+
+              <img src="assets/gmail.jpg" alt="Gmail" class="h-full w-full object-cover rounded-[2vh]" />
+
+            </div>
+
+            <span class="text-[#ec61ff] text-[2.5vh]">↗</span>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-white font-['Cormorant_Upright'] text-[3.5vh]">
+              Email
+            </h2>
+
+            <p class="text-white/55 text-[2.8vh] mt-[1vh]">
+              Formal Communication
+            </p>
+
+            <p class="text-white/70 text-[2.7vh] mt-[2vh] leading-relaxed">
+              Send a detailed message about collaboration, project enquiries,
+              feedback, or other professional discussions.
+            </p>
+
+          </div>
+
+          <p class="text-[#ec61ff] text-[2.7vh] mt-[1vh]">
+            Send an Email →
+          </p>
+
+        </a>
+
+
+
+        <!-- GITHUB -->
+
+        <a href="https://github.com/alimapari12345-web" target="_blank" rel="noopener noreferrer"
+          aria-label="View my GitHub profile" class="bg-white/[0.04]
+            border border-[rgba(236,97,255,0.3)]
+            backdrop-blur-[1vh]
+            rounded-[3vh]
+            p-[4vh]
+            flex flex-col gap-[2vh]">
+
+          <div class="flex justify-between items-center">
+
+            <div class="h-[8vh] w-[8vh]
+              flex items-center justify-center
+              rounded-[2vh]
+              bg-white/[0.06]
+              border border-white/20">
+
+              <img src="assets/GitHub.png" alt="GitHub" class="h-full w-full object-cover rounded-[2vh]" />
+
+            </div>
+
+            <span class="text-[#ec61ff] text-[2.5vh]">↗</span>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-white font-['Cormorant_Upright'] text-[3.5vh]">
+              GitHub
+            </h2>
+
+            <p class="text-white/55 text-[2.8vh] mt-[1vh]">
+              Projects & Source Code
+            </p>
+
+            <p class="text-white/70 text-[2.7vh] mt-[2vh] leading-relaxed">
+              Explore my repositories, review my code, and follow my
+              progress as I develop new projects.
+            </p>
+
+          </div>
+
+          <p class="text-[#ec61ff] text-[2.7vh] mt-[1vh]">
+            Explore GitHub →
+          </p>
+
+        </a>
+
+
+
+        <!-- CALL -->
+
+        <a href="tel:+917506565137" aria-label="Call Ali Mapari at +91 7506565137" class="bg-white/[0.04]
+            border border-[rgba(236,97,255,0.3)]
+            backdrop-blur-[1vh]
+            rounded-[3vh]
+            p-[4vh]
+            flex flex-col gap-[2vh]">
+
+          <div class="flex justify-between items-center">
+
+            <div class="h-[8vh] w-[8vh]
+              flex items-center justify-center
+              rounded-[2vh]
+              bg-[#ec61ff]/10
+              border border-[rgba(236,97,255,0.4)]">
+
+              <img src="assets/call.jpg" alt="Call" class="h-full w-full object-cover rounded-[2vh]" />
+
+            </div>
+
+            <span class="text-[#ec61ff] text-[2.5vh]">↗</span>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-white font-['Cormorant_Upright'] text-[3.5vh]">
+              Call Me
+            </h2>
+
+            <p class="text-white/55 text-[2.8vh] mt-[1vh]">
+              +91 7506565137
+            </p>
+
+            <p class="text-white/70 text-[2.7vh] mt-[2vh] leading-relaxed">
+              Give me a call to discuss a project, collaboration, or any
+              other professional enquiry. I'm based in Mumbai, India.
+            </p>
+
+          </div>
+
+          <p class="text-[#ec61ff] text-[2.7vh] mt-[1vh]">
+            Call me now →
+          </p>
+
+        </a>
+
+
+      </section>
+
+
+
+      <!-- CLOSING SECTION -->
+
+      <section class="mt-[8vh]
+        bg-white/[0.04]
+        border border-[rgba(236,97,255,0.3)]
+        rounded-[3vh]
+        px-[4vh] py-[5vh]
+        text-center">
+
+        <p class="text-[#ec61ff] text-[2.7vh] tracking-[0.4vh] uppercase">
+          One Connection Can Start Something New
+        </p>
+
+        <h2 class="text-white font-['Cormorant_Upright']
+          text-[5.5vh] mt-[2vh]">
+          Have something worth discussing?
+        </h2>
+
+        <p class="text-white/60 text-[2.8vh] leading-relaxed
+          max-w-[85vh] mx-auto mt-[2vh]">
+          I'm interested in connecting with people who enjoy solving
+          problems, exploring technology, and turning ideas into practical
+          digital experiences.
+        </p>
+
+        <p class="text-[#ec61ff] font-['Cormorant_Upright']
+          text-[2.5vh] mt-[3vh]">
+          Let's make the connection meaningful.
+        </p>
+
+      </section>
+
+
+
+      <!-- FOOTER -->
+
+      <footer class="mt-[7vh] pt-[3vh]
+        border-t border-white/10
+        flex flex-col md:flex-row
+        justify-between items-center gap-[2vh]">
+
+        <p class="text-white/80 font-['Cormorant_Upright'] text-[2.7vh]">
+          ALI MAPARI<span class="text-[#ec61ff]">.</span>
+        </p>
+
+        <p class="text-white/45 text-[2.8vh] text-center">
+          Built with curiosity. Designed with intention.
+        </p>
+
+        <a href="index.html" class="text-[#ec61ff] text-[2.8vh]">
+          Back to Home ↗
+        </a>
+
+      </footer>
+
+    </main>
+  </main>

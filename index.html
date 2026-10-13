@@ -953,31 +953,43 @@
           ">MY PORTFOLIO</p>
         </nav>
         <nav class="flex gap-[15vh]">
-          <a href="index.html">Home</a>
-          <a href="#Skills">Skills & Project</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">Home</a>
+          <a href="#Skills" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">Skills & Project</a>
+          <a href="about.html" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">About</a>
+          <a href="contact.html" class="hover:scale-[1.2] hover:text-[rgba(236,97,255)]
+          active:scale[1.2] active:text-[rgba(236,97,255)]
+          [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]
+          transition-transform duration-300 ease-in-out">Contact</a>
         </nav>
       </header>
       <main>
-      <section>
-        <h1 class="font-['Cinzel_Decorative']
+        <section>
+          <h1 class="font-['Cinzel_Decorative']
         text-[20vh]
         text-white
 
         absolute top-[20vh] left-[15vh]
         [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]">Ali<h1>
 
-        <h1 class="font-['Cinzel_Decorative']
+              <h1 class="font-['Cinzel_Decorative']
         font-900
         text-[20vh]
         text-white
         absolute top-[40vh] left-[45vh]
         [text-shadow:0_0_1.6vh_rgba(236,97,255,0.8)]">Mapari</h1>
 
-        <div class="absolute bottom-[15vh] left-[29vh]
+              <div class="absolute bottom-[15vh] left-[29vh]
         flex justify-between items-center gap-[13vh]">
-          <button class="bg-[rgb(223,0,255)]
+                <a class="bg-[rgb(223,0,255)]
           rounded-[3vh]
           font-['Lato']
           px-[4.3vh] py-[2vh]
@@ -985,9 +997,9 @@
           shadow-[0px_0px_2.5vh_0vh_rgba(223,10,255,0.6)]
           active:scale-[0.8]
           hover:scale-[0.8]
-          transition-transform duration-300">Explore Work</button>
+          transition-transform duration-300" href="#Skills">Explore Work</a>
 
-          <button class="bg-[rgb(236,120,255)]
+                <a class="bg-[rgb(236,120,255)]
             rounded-[3vh]
             font-['Lato']
             px-[4.3vh] py-[2vh]
@@ -995,11 +1007,11 @@
             shadow-[0px_0px_2vh_0vh_rgba(236,97,255,0.6)]
             active:scale-[0.8]
             hover:scale-[0.8]
-            transition-transform duration-300">Get in touch</button>
-        </div>
+            transition-transform duration-300" href="contact.html">Get in touch</a>
+              </div>
         </section>
         <section>
-        <div class="absolute top-[30vh] right-[14vh]
+          <div class="absolute top-[30vh] right-[14vh]
           text-[3.1vh]
           text-white
           bg-white/[0.05]
@@ -1008,14 +1020,15 @@
           shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)
           px-[4vh] py-[7vh]
           rounded-[3vh]">
-          <p class="font-['Lato']">
-          <span class="text-[7vh] font-['Cormorant_Upright']
+            <p class="font-['Lato']">
+              <span class="text-[7vh] font-['Cormorant_Upright']
           text-[rgb(236,130,255)]">AI & Data Science</span><br>
-          ⬩ Web Development
-          ⬩ Frontend Engineering<br>
-          ⬩ Software Development
-          ⬩ UI/UX Designer </p>
-        </div>
+              ⬩ Web Development
+              ⬩ Frontend Engineering<br>
+              ⬩ Software Development
+              ⬩ UI/UX Designer
+            </p>
+          </div>
         </section>
       </main>
     </div>
@@ -1029,10 +1042,9 @@
 
 
         <p class="text-white
-        text-[6.8vh]
+        text-[7vh]
         tracking-[0.1vh]
-        font-['Cormorant_Upright']"
-        id="Skills">Technical Stack</p>
+        font-['Cormorant_Upright']" id="Skills">Technical Stack</p>
       </section>
 
 
@@ -1042,7 +1054,8 @@
 
         <!-- html -->
 
-        <div class="bg-white/[0.05]
+        <div
+          class="bg-white/[0.05]
           border border-[1px] border-[rgba(236,97,255,0.3)]
           backdrop-blur-[1vh]
           shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)
@@ -1052,7 +1065,7 @@
           h-[30vh] w-[30vh]
           shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
           active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="HTML.png" width="80vh" height="80vh" alt="">
+          <img src="assets/HTML.png" width="80vh" height="80vh" alt="">
           <p class="text-white
           font-['Lato']
           font-bold
@@ -1072,7 +1085,7 @@
                   h-[30vh] w-[30vh]
                   shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                   active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="CSS-removebg-preview.png" width="80vh" height="100vh" alt="">
+          <img src="assets/CSS-removebg-preview.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                   font-['Lato']
                   font-bold
@@ -1092,7 +1105,7 @@
                   h-[30vh] w-[30vh]
                   shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                   active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="JavaScript-removebg-preview.png" width="80vh" height="100vh" alt="">
+          <img src="assets/JavaScript-removebg-preview.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                   font-['Lato']
                   font-bold
@@ -1112,7 +1125,7 @@
                   h-[30vh] w-[30vh]
                   shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                   active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="Python-removebg-preview.png" width="80vh" height="100vh" alt="">
+          <img src="assets/Python-removebg-preview.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                   font-['Lato']
                   font-bold
@@ -1132,7 +1145,7 @@
                   h-[30vh] w-[30vh]
                   shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                   active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="git.png" width="80vh" height="100vh" alt="">
+          <img src="assets/git.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                   font-['Lato']
                   font-bold
@@ -1152,7 +1165,7 @@
                   h-[30vh] w-[30vh]
                   shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                   active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="GitHub.png" width="80vh" height="100vh" alt="">
+          <img src="assets/GitHub.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                   font-['Lato']
                   font-bold
@@ -1161,7 +1174,7 @@
 
         <!-- Figma -->
 
-          <div
+        <div
           class="bg-white/[0.05]
                   border border-[1px] border-[rgba(236,97,255,0.3)]
                   backdrop-blur-[1vh]
@@ -1172,16 +1185,16 @@
                   h-[30vh] w-[30vh]
                   shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                   active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="Figma.png" width="80vh" height="100vh" alt="">
+          <img src="assets/Figma.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                   font-['Lato']
                   font-bold
                   gr">FIGMA</p>
-          </div>
+        </div>
 
-          <!-- WordPress -->
+        <!-- WordPress -->
 
-          <div
+        <div
           class="bg-white/[0.05]
                           border border-[1px] border-[rgba(236,97,255,0.3)]
                           backdrop-blur-[1vh]
@@ -1192,12 +1205,12 @@
                           h-[30vh] w-[30vh]
                           shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300
                           active:shadow-[0_0_5vh_rgba(236,97,255,0.9),inset_0_0_4vh_rgba(236,97,255,0.8)] transition-transform duration-300">
-          <img src="WordPress-removebg-preview.png" width="80vh" height="100vh" alt="">
+          <img src="assets/WordPress-removebg-preview.png" width="80vh" height="100vh" alt="">
           <p class="text-white
                           font-['Lato']
                           font-bold
                           gr">WordPress</p>
-          </div>
+        </div>
       </section>
     </section>
 
@@ -2065,75 +2078,78 @@
                       group-hover:shadow-[0_0_20px_#df0aff,0_0_60px_rgba(223,10,255,0.9),inset_0_0_40px_rgba(223,10,255,0.8)]
                     "></span>
         </div>
-      <section class="w-[98.8vw]
+        <section class="w-[98.8vw]
           flex flex-col justify-center items-center gap-[8vh]
           absolute top-[208vh]">
 
-        <div>
-          <p class="text-white
-            text-[6.8vh]
+          <div>
+            <p class="text-white
+            text-[7vh]
             font-['Cormorant_Upright']">Featured Projects</p>
           </div>
 
-      <div class="flex gap-[15vh] px-[15vh]">
-        <article class="bg-white/[0.05]
+          <div class="flex gap-[15vh] px-[15vh]">
+            <article class="bg-white/[0.05]
       backdrop-blur-[0.5vh]
       border border-[1px] border-[rgba(236,97,255,0.3)]
       rounded-[3vh]
       px-[6vh] py-[1vh]
       mb-[5vh]
       shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)">
-          <div class="text-[rgba(236,140,255)]
+              <div class="text-[rgba(236,140,255)]
           text-[4vh] p-[3vh]"> PRIME VIDEO — STREAMING PLATFORM</div>
 
-          <p class="text-white">
-            A streaming platform inspired by Prime Video, designed to recreate the experience of browsing movies and TV shows
-          through an immersive, entertainment-focused interface. <br><br>
+              <p class="text-white">
+                A streaming platform inspired by Prime Video, designed to recreate the experience of browsing movies and
+                TV shows
+                through an immersive, entertainment-focused interface. <br><br>
 
-          Core Focus:  UI Development
-          · Responsive Design
-          · Component-Based Layouts</p><br>
+                Core Focus: UI Development
+                · Responsive Design
+                · Component-Based Layouts</p><br>
 
-          <p class="text-[rgba(236,140,255)]">Project Highlights</p> <br>
+              <p class="text-[rgba(236,140,255)]">Project Highlights</p> <br>
 
-          <p class="text-white">Cinematic hero sections and content-focused layouts. <br>
-          Organized movie categories and thumbnail galleries. <br>
-          Dark-themed interface inspired by modern streaming platforms. <br><br></p>
+              <p class="text-white">Cinematic hero sections and content-focused layouts. <br>
+                Organized movie categories and thumbnail galleries. <br>
+                Dark-themed interface inspired by modern streaming platforms. <br><br></p>
 
-          <p class="text-[rgba(236,140,255)]">CTA: View Project · View Source Code</p>
+              <p class="text-[rgba(236,140,255)]">CTA: View Project · View Source Code</p>
 
-        </article>
-        <article class="bg-white/[0.05]
+            </article>
+            <article class="bg-white/[0.05]
       backdrop-blur-[0.5vh]
       border border-[1px] border-[rgba(236,97,255,0.3)]
       rounded-[3vh]
       px-[6vh]
       shadow-[0px_0px_3vh_0.5vh_rgba(0,0,0,0.3)
       mb-[5vh]">
-          <div class="text-[rgba(236,140,255)]
+              <div class="text-[rgba(236,140,255)]
           text-[4vh] p-[3vh]">THE PASTA LANE — ITALIAN BISTRO</div>
 
-          <p class="text-white">
+              <p class="text-white">
 
-          A restaurant website concept celebrating authentic Italian cuisine through an elegant visual identity, appetizing food
-          imagery, and a refined digital dining experience. <br>
+                A restaurant website concept celebrating authentic Italian cuisine through an elegant visual identity,
+                appetizing food
+                imagery, and a refined digital dining experience. <br>
 
 
 
-          Core Focus: UI/UX Design · Visual Storytelling · Responsive Web Design</p> <br>
+                Core Focus: UI/UX Design · Visual Storytelling · Responsive Web Design</p> <br>
 
-          <p class="text-[rgba(236,140,255)]">Project Highlights</p> <br>
+              <p class="text-[rgba(236,140,255)]">Project Highlights</p> <br>
 
-          <p class="text-white">Restaurant-inspired layouts with a strong visual hierarchy. <br>
-          Menu presentation designed to showcase signature Italian dishes. <br>
-          Warm aesthetics combining typography, imagery, and thoughtful spacing.</p> <br>
+              <p class="text-white">Restaurant-inspired layouts with a strong visual hierarchy. <br>
+                Menu presentation designed to showcase signature Italian dishes. <br>
+                Warm aesthetics combining typography, imagery, and thoughtful spacing.</p> <br>
 
-          <p class="text-[rgba(236,140,255)]">CTA : View Project · View Source Code</p> <br>
+              <p class="text-[rgba(236,140,255)]">CTA : View Project · View Source Code</p> <br>
 
-        </article>
-      </div>
-      </section>
+            </article>
+          </div>
+        </section>
     </section>
   </main>
 </body>
+
 </html>
